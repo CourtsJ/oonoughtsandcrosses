@@ -18,7 +18,7 @@ class Game(object):
         '''Sees if game is won'''
         gameover = self.game_over()
         if gameover == True:
-            if board.has_winning_line() == True:
+            if board.is_winning_line() == True:
                 winner()  
             else:
                 is_drawn()
